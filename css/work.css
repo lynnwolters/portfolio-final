@@ -1,0 +1,140 @@
+/***********/
+/* DESKTOP */
+/***********/
+
+main section:nth-of-type(4) h2 {
+    font-size: 4em;
+    height: fit-content;
+    line-height: 1em;
+    color: var(--title-color);  
+    text-transform: uppercase; 
+    margin: 2em 2em;
+    font-family: 'MoglanDemo';
+}
+
+main section:nth-of-type(4) ul {
+    list-style: none;
+}
+
+main section:nth-of-type(4) ul li:nth-of-type(1) {
+    border-top: dotted 0.15em var(--line-color);
+}
+
+main section:nth-of-type(4) ul li {
+    border-bottom: dotted 0.15em var(--line-color);
+    padding: 0 8em;
+    height: 10em;
+    display: flex;
+    align-items: center;
+}
+
+main section:nth-of-type(4) ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+main section:nth-of-type(4) ul li a h3 {
+    font-size: 2em;
+    color: var(--title-color);
+}
+
+main section:nth-of-type(4) ul li a p {
+    color: var(--p-color);
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: right;
+    letter-spacing: 0.06em;
+}
+
+/**********/
+/* TABLET */
+/**********/
+
+@media (max-width: 80em) {
+    main section:nth-of-type(4) h2 {
+        margin: 1em 1.2em;
+        font-size: 3em;
+    }
+
+    main section:nth-of-type(4) ul li {
+        padding: 0 4em;
+    }
+
+    main section:nth-of-type(4) ul li a h3 {
+        font-size: 1.8em;
+    }
+
+    main section:nth-of-type(4) ul li a p {
+        font-size: 0.8em;
+    }
+}
+
+/****************/
+/* TABLET SMALL */
+/****************/
+
+@media (max-width: 48em) {
+    main section:nth-of-type(4) h2 {
+        margin: 1em 0.6em;
+        font-size: 2.8em;
+    }
+
+    main section:nth-of-type(4) ul li {
+        padding: 0 1.8em;
+    }
+
+    main section:nth-of-type(4) ul li a h3 {
+        font-size: 1.2em;
+    }
+
+    main section:nth-of-type(4) ul li a p {
+        font-size: 0.7em;
+    }
+}
+
+/**********/
+/* MOBILE */
+/**********/
+
+@media (max-width: 40em) {
+    main section:nth-of-type(4) ul li {
+        height: 8em;
+    }
+    
+    main section:nth-of-type(4) ul li a {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    main section:nth-of-type(4) ul li a p {
+        text-align: left;
+        margin-top: .4em;
+    }
+}
+
+/****************/
+/* MOBILE SMALL */
+/****************/
+
+@media (max-width: 22em) {
+    main section:nth-of-type(4) h2 {
+        font-size: 2em;
+    }
+    
+    main section:nth-of-type(4) ul li {
+        padding: 0 1.2em;
+        height: 6em;
+    }
+
+    main section:nth-of-type(4) ul li a h3 {
+        font-size: 1em;
+    }
+
+    main section:nth-of-type(4) ul li a p {
+        font-size: 0.6em;
+    }
+}

@@ -1,0 +1,105 @@
+/*****************/
+/* CUSTOM CURSOR */
+/*****************/
+
+/***********/
+/* DESKTOP */
+/***********/
+
+.cursor {
+    z-index: 2000;
+    width: 1em;
+    aspect-ratio: 1/1;
+    border-radius: 100em;
+    background-color: var(--accent-color-2);
+    transition: all .1s ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-1);
+    letter-spacing: 0.06em;
+    font-size: .8em;
+}
+
+.hover {
+    width: 5em;
+    transition: all .2s ease-out;
+    opacity: .8;
+}
+
+.hover-work {
+    width: 5em;
+    transition: all .2s ease-out;
+    opacity: 1;
+}
+
+.hover-work::after {
+    content: "";
+    width: 12em;
+    height: 18em;
+    background-color: var(--main-1);
+    background-size: contain;
+    background-repeat: none;
+    background-position: center center;
+    position: absolute;
+    top: -20em;
+    border-radius: 1.4em;
+    rotate: -4deg;
+    opacity: 1;
+}
+
+.hover-work-1::after {
+    background-image: url(../img/swapfiets-hover.jpg);
+}
+
+.hover-work-2::after {
+    background-image: url(../img/tableware-by-sharon-hover.jpg);
+}
+
+.hover-work-3::after {
+    background-image: url(../img/css-art-hover.jpg);
+}
+
+.hover-work-4::after {
+    background-color: var(--main-1);
+}
+
+/****************/
+/* TABLET SMALL */
+/****************/
+
+@media (max-width: 48em) {
+    .cursor {
+        display: none;
+    }
+
+    .hover-work {
+        display: none;
+    }
+    
+    .hover-work::after {
+        display: none;
+    }
+
+    .hover-work-1::after {
+        display: none;
+    }
+    
+    .hover-work-2::after {
+        display: none;
+    }
+    
+    .hover-work-3::after {
+        display: none;
+    }
+    
+    .hover-work-4::after {
+        display: none;
+    }
+}
+
