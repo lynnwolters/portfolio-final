@@ -58,11 +58,11 @@
 }
 
 .hover-work-2::after {
-    background-image: url(../img/tableware-by-sharon-hover.jpg);
+    background-image: url(../img/css-art-hover.jpg);
 }
 
 .hover-work-3::after {
-    background-image: url(../img/css-art-hover.jpg);
+    background-image: var(--main-1);
 }
 
 .hover-work-4::after {
