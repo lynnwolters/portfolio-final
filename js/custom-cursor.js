@@ -7,10 +7,10 @@ var cursor = document.querySelector('.cursor');
 var a = document.querySelectorAll('a');
 var button = document.querySelectorAll('button');
 
-var work = document.querySelectorAll('main section:nth-of-type(4) ul li:nth-of-type(1) > a, main section:nth-of-type(4) ul li:nth-of-type(2) > a');
+var work = document.querySelectorAll('main section:nth-of-type(4) ul li:nth-of-type(1) > a, main section:nth-of-type(4) ul li:nth-of-type(2) > a, main section:nth-of-type(4) ul li:nth-of-type(3) > a');
 var workOne = document.querySelectorAll('main section:nth-of-type(4) ul li:nth-of-type(1) > a');
 var workTwo = document.querySelectorAll('main section:nth-of-type(4) ul li:nth-of-type(2) > a');
-// var workThree = document.querySelectorAll('main section:nth-of-type(4) ul li:nth-of-type(3) > a');
+var workThree = document.querySelectorAll('main section:nth-of-type(4) ul li:nth-of-type(3) > a');
 // var workFour = document.querySelectorAll('main section:nth-of-type(4) ul li:nth-of-type(4) > a');
 
 /**************/
@@ -92,14 +92,14 @@ workTwo.forEach(item => {
   });
 })
 
-// workThree.forEach(item => {
-//   item.addEventListener('mouseover', () => {
-//     cursor.classList.add('hover-work-3');
-//   });
-//   item.addEventListener('mouseleave', () => {
-//     cursor.classList.remove('hover-work-3');
-//   });
-// })
+workThree.forEach(item => {
+  item.addEventListener('mouseover', () => {
+    cursor.classList.add('hover-work-3');
+  });
+  item.addEventListener('mouseleave', () => {
+    cursor.classList.remove('hover-work-3');
+  });
+})
 
 // workFour.forEach(item => {
 //   item.addEventListener('mouseover', () => {
